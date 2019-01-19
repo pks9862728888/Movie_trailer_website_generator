@@ -11,7 +11,7 @@ def get_trailer_data(data, object_name, flag=0):
     This function gets name, story_line, you_tube_trailer, poster_image_url, release_date of movies or Tv series.
 
     :param:
-        (DataFrame) data: Stores dataframe containing movie or Tv series details
+        (DataFrame) data: Stores DataFrame containing movie or Tv series details
         (str) object_name: Stores name of film/Tv_series.
         (int) flag: If flag=0 then no season information is fetched. If flag=1 then season information is fetched.
     :return:
@@ -28,6 +28,11 @@ def get_trailer_data(data, object_name, flag=0):
     poster_image_url = data.loc[object_name, 'poster_image_url']
     release_date = data.loc[object_name, 'release_date']
 
+    # For maintaining fixed height of grids restricting story_line to 136 characters.
+    if len(story_line) > 136:
+        story_line = story_line[0:136] + "..."
+
+    # Getting season information if Tv series
     if flag:
         season = data.loc[object_name, 'season']
         return [name, story_line, yt_trailer_url, poster_image_url, release_date, season]
@@ -67,7 +72,8 @@ def main():
     maze_runner_the_death_cure = media.Movie(movie_data[0], movie_data[1], movie_data[2], movie_data[3], movie_data[4])
 
     movie_data = get_trailer_data(data_movie, "Maze Runner: The Scorch Trials")
-    maze_runner_the_scorch_trials = media.Movie(movie_data[0], movie_data[1], movie_data[2], movie_data[3], movie_data[4])
+    maze_runner_the_scorch_trials = media.Movie(movie_data[0], movie_data[1], movie_data[2], movie_data[3],
+                                                movie_data[4])
 
     movie_data = get_trailer_data(data_movie, "The Maze Runner")
     the_maze_runner = media.Movie(movie_data[0], movie_data[1], movie_data[2], movie_data[3], movie_data[4])
