@@ -14,8 +14,6 @@ main_page_head = '''
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
