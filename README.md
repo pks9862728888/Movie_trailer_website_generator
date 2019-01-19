@@ -3,11 +3,11 @@
 
 Movie trailer website project, part of the Udacity [Python Foundation Nanodegree](https://in.udacity.com/course/python-foundation-nanodegree--nd002-inpy).
 
-## What it is and does
+## What it is and does:
 
 A Python program that produces the HTML for a movie website that displays a number of movie and Tv series trailers. Click on a poster to play its trailer.
 
-## Required Libraries and Dependencies
+## Required Libraries and Dependencies:
 
 Python 3.x is required to run this project. The Python executable should be in your default path, which the Python installer should have set. 
 
@@ -19,7 +19,7 @@ To install pandas open the terminal or command prompt and type in the code:
 pip install pandas
 ```
 
-## Project contents
+## Project contents:
 
 This project consists for the following files:
 
@@ -31,7 +31,7 @@ This project consists for the following files:
 * **website.html** - Output html file which was created when *entertainment_center.py* was run.
 * **Licence.txt** - Licencing information.
 
-## Download
+## Download:
 This project can be downloaded by [clicking here](https://github.com/pks9862728888/Movie_trailer_website_generator/archive/master.zip)
 
 ## How to Run Project:
@@ -87,11 +87,11 @@ fresh_tomatoes.open_movies_page([axl, tau, automata, extinction, stealth, maze_r
 ```
 Then execute `entertainment_center.py`.
 
-## Output after running `entertainment_center.py`
+## Output after running `entertainment_center.py`:
 
 [This](http://htmlpreview.github.com/?https://github.com/pks9862728888/Movie_trailer_website_generator/blob/master/webpage.html) is what it looks like when you run *entertainment_center.py*
 
-## Extra Credit Description
+## Extra Credit Description:
 
 The following features were implemented to gain an extra credit from Udacity:
 
@@ -103,7 +103,7 @@ The following features were implemented to gain an extra credit from Udacity:
 * Added trailer poster images border.
 * Fixed display problem caused when story_lines are of different lengths.
 
-## Vulnerabilities and fixes
+## Vulnerabilities and Fixes:
 If new movie/Tv_series data is to be shown then sometimes the trailer posters might not align themselves properly in grid, especially if their story_lines are of different lengths(such as one `single-line story_line` and the other `multi-line story_line`).
 
 
