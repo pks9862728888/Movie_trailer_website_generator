@@ -15,8 +15,26 @@
             padding-top: 80px;
             background: #00081c;
         }
-        .match-my-cols [class*="col-"]{
-        height=400px;
+        #boxshadow {
+        position: relative;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        padding: 2px;
+        background: #f2ff00;
+        }
+        #boxshadow img {
+        width: 100%;
+        border: 1px solid #0f014c;
+        border-style: inset;
+        }
+        #boxshadow::after {
+        content: '';
+        position: absolute;
+        z-index: -1; /* hide shadow behind image */
+        box-shadow: 0 15px 20px rgba(9, 3, 3, 0.3);
+        width: 70%;
+        left: 15%; /* one half of the remaining 30% */
+        height: 100px;
+        bottom: 0;
         }
         #trailer .modal-dialog {
             margin-top: 120px;
@@ -111,147 +129,147 @@
     <div class="container">
       
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="--8nr2kt4uk" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/AXL_Official_Poster_2018.png" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">A-X-L</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>24 August, 2018</p>
     <p style="font-size:13px">A.X.L. is a top-secret, robotic dog who develops a special friendship with Miles and will go to any length to protect his new companion....</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="hYPqaGW0Uno" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Tau_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Tau_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Tau</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>June 29, 2018</p>
     <p style="font-size:13px">A woman is held captive by a scientist in a futuristic smart house, & hopes to escape by reasoning with the AI that controls the house. </p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="Wh_wmaOZcWo" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Automata_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Automata_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Automata</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>17 October, 2014</p>
     <p style="font-size:13px">Jacq Vaucan investigates robots violating their primary protocols against altering themselves resulting in profound consequences.</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="-ePDPGXkvlw" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Extinction.png" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Extinction.png" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Extinction</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>27 July, 2018</p>
     <p style="font-size:13px">A father’s recurring dream of losing his family turns into reality when the planet is invaded by a force bent on destruction. While figh...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="a2PW7a9ViDc" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Stealth_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Stealth_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Stealth</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>July 29, 2005</p>
     <p style="font-size:13px">Deeply ensconced in a top-secret military program, three pilots struggle to bring an artificial intelligence program under control befor...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="4-BTxXm8KSg" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/MazeRunnerDeathCureFinalPoster.jpeg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/MazeRunnerDeathCureFinalPoster.jpeg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Maze Runner: The Death Cure</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>26 January, 2018</p>
     <p style="font-size:13px">Young hero Thomas embarks on a mission to find a cure for a deadly disease known as "The Flare". Thomas, Newt, and Frypan are the last o...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="SDofO3P2HpE" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Maze-Runner-The-Scorch-Trials-Poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Maze-Runner-The-Scorch-Trials-Poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Maze Runner: The Scorch Trials</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>18 September, 2015</p>
     <p style="font-size:13px">After having escaped the Maze, the Gladers now face a new set of challenges on the open roads of a desolate landscape filled with unimag...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="K1In45K0DGc" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/b/be/The_Maze_Runner_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/be/The_Maze_Runner_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">The Maze Runner</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>19 September, 2014</p>
     <p style="font-size:13px">Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="zSWdZVtXT7E" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Interstellar</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>'07 November, 2014</p>
     <p style="font-size:13px">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. In the mid-21st century, crop blight...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="A85EtOalcsM" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Pacific_Rim_FilmPoster.jpeg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Pacific_Rim_FilmPoster.jpeg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Pacific Rim</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>12 July, 2013</p>
     <p style="font-size:13px">As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolet...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="8BAhwgjMvnM" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Pacificrim2-poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Pacificrim2-poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Pacific Rim: Uprising</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>23 March, 2018</p>
     <p style="font-size:13px">Jake Pentecost, son of Stacker Pentecost, reunites with Mako Mori to lead a new generation of Jaeger pilots, including rival Lambert and...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="6Vu081NOorA" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Lucy_%282014_film%29_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Lucy_%282014_film%29_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Lucy</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>July 25, 2014</p>
     <p style="font-size:13px">A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior evolved beyond huma...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="34cEo0VhfGE" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Prometheusposterfixed.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Prometheusposterfixed.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Prometheus</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>June 8, 2012</p>
     <p style="font-size:13px">Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone. </p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="vw61gCe2oqI" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Edge of Tomorrow</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>June 6, 2014</p>
     <p style="font-size:13px">A soldier fighting aliens gets to relive the same day over and over again, the day restarting every time he dies. </p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="YoHD9XEInc0" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Inception</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>July 16, 2010</p>
     <p style="font-size:13px">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the ...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="0zZcBv0gPK0" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Westworld_season_1.png" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Westworld_season_1.png" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Westworld: S1</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>February 10,2016</p>
     <p style="font-size:13px">Set at the intersection of the near future and the reimagined past, explore a world in which every human appetite can be indulged withou...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="jukeU2FBssk" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Westworld_season_2.png" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Westworld_season_2.png" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Westworld: S2</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>April 22, 2018</p>
     <p style="font-size:13px">In the hours following the massacre of the Delos board members, Bernard and Charlotte take shelter in an underground bunker, where they ...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="hizUznsCRbE" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Intelligence_Title.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Intelligence_Title.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Intelligence: S1</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>January 7, 2014</p>
     <p style="font-size:13px">A high-tech intelligence operative, enhanced with a super-computer microchip in his brain, aids an elite government cyber-security agenc...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="FYtJnnSwJKE" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Intelligence_%28TV%29_Promo_3.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Intelligence_%28TV%29_Promo_3.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Intelligence: S2</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>September 27, 2015</p>
     <p style="font-size:13px">A high-tech intelligence operative, enhanced with a super-computer microchip in his brain, aids an elite government cyber-security agenc...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="X2yG2rIdkbQ" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Minority_report_Intertitle.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Minority_report_Intertitle.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Minority Report</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>October 9, 2015</p>
     <p style="font-size:13px">10 years after the end of Precrime in Washington DC one of the three PreCogs attempts to lead on a normal life while still suffering fro...</p>
 </div>
 
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="FV2ojHR40TQ" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Almost_Human_Main_Cast.jpg" width="200" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Almost_Human_Main_Cast.jpg" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">Almost Human</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>November 17, 2013</p>
     <p style="font-size:13px">In a not-so-distant future, a human cop and an android partner up to protect and serve. In 2048, the uncontrollable evolution of science...</p>
