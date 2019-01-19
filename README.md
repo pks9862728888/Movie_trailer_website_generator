@@ -3,17 +3,17 @@
 
 Movie trailer website project, part of the Udacity [Python Foundation Nanodegree](https://in.udacity.com/course/python-foundation-nanodegree--nd002-inpy).
 
-## What it is and does:
+## Overview:
 
-A Python program that produces the HTML for a movie website that displays a number of movie and Tv series trailers. Click on a poster to play its trailer.
+A Python program that produces the HTML for a movie website which displays a number of movies and Tv series trailers. After website has been created, it will open automatically in your default web browser. Simply click on posters to view trailers.
 
 ## Required Libraries and Dependencies:
 
-Python 3.x is required to run this project. The Python executable should be in your default path, which the Python installer should have set. 
+Python 3.x is required to run this project. The Python executable should be in your default path, in which the Python installer should have set. 
 
 Moreover pandas should be installed. 
 
-To install pandas open the terminal or command prompt and type in the code:
+To install pandas open the terminal or command prompt and type:
 
 ```bash
 pip install pandas
@@ -30,6 +30,7 @@ This project consists for the following files:
 * **datafile_tv_series.csv** - contains the data of the tv series trailers.
 * **website.html** - Output html file which was created when *entertainment_center.py* was run.
 * **Licence.txt** - Licencing information.
+* **_config.yml** - Configuration file for github theme.
 
 ## Download:
 This project can be downloaded by [clicking here](https://github.com/pks9862728888/Movie_trailer_website_generator/archive/master.zip)
@@ -97,9 +98,9 @@ The following features were implemented to gain an extra credit from Udacity:
 
 * Added the storyline of the movie to the website.
 * Added the release date to the Movie class, which is also displayed on the website.
-* Changed the background and text colour to create a dark blue theme for the website.
-* Added drop shadow to the movie poster images.
-* Added Tv series trailers by inheriting Movie class.
+* Changed the background color to create a dark blue theme for the website.
+* Changed text color to get attractive look.
+* Added Tv series trailers by inheriting Movie class(*i.e. implemented inheritance*).
 * Added trailer poster images border.
 * Fixed display problem caused when story_lines are of different lengths.
 
@@ -113,3 +114,5 @@ To ensure all the trailers align perfectly, the minimum length of characters of 
 1. [Python Foundation Nanodegree Udacity](https://in.udacity.com/course/python-foundation-nanodegree--nd002-inpy)
 2. [Markdown formatting for README.md](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 3. [Writing Readme Free Course Udacity](https://classroom.udacity.com/courses/ud777)
+4. [Sample Readme by tsega](https://github.com/tsega/movie-trailer-website/blob/master/README.md)
+5. [Getting preview of Html Directly from Github](https://stackoverflow.com/questions/6551446/can-i-run-html-files-directly-from-github-instead-of-just-viewing-their-source)
