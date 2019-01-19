@@ -104,10 +104,10 @@ The following features were implemented to gain an extra credit from Udacity:
 * Fixed display problem caused when story_lines are of different lengths.
 
 ## Vulnerabilities and fixes
-If new movie/Tv_series data is to be shown then sometimes the trailer posters might not align themselves properly in grid, especially if their story_line is less than 136 characters.
+If new movie/Tv_series data is to be shown then sometimes the trailer posters might not align themselves properly in grid, especially if their story_lines are of different lengths(such as one `single-line story_line` and the other `multi-line story_line`).
 
 
-To ensure all the trailers align perfectly, the minimum length of characters of movie/Tv_series story_line should be at least 136 characters. However if the story_line is greater than 136 characters, then the exceeding characters are truncated.
+To ensure all the trailers align perfectly, the minimum length of characters of movie/Tv_series story_line should be at least 136 characters(*I have taken it as minimum number of characters*). However if the story_line is greater than 136 characters, then the exceeding characters are truncated.
 
 ## References:
 1. [Python Foundation Nanodegree Udacity](https://in.udacity.com/course/python-foundation-nanodegree--nd002-inpy)
