@@ -21,8 +21,26 @@ main_page_head = '''
             padding-top: 80px;
             background: #00081c;
         }
-        .match-my-cols [class*="col-"]{
-        height=400px;
+        #boxshadow {
+        position: relative;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        padding: 2px;
+        background: #f2ff00;
+        }
+        #boxshadow img {
+        width: 100%;
+        border: 1px solid #0f014c;
+        border-style: inset;
+        }
+        #boxshadow::after {
+        content: '';
+        position: absolute;
+        z-index: -1; /* hide shadow behind image */
+        box-shadow: 0 15px 20px rgba(9, 3, 3, 0.3);
+        width: 70%;
+        left: 15%; /* one half of the remaining 30% */
+        height: 100px;
+        bottom: 0;
         }
         #trailer .modal-dialog {
             margin-top: 120px;
@@ -129,7 +147,7 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 match-my-cols movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="200" height="300">
+    <img src="{poster_image_url}" width="200" height="300" id="boxshadow">
     <h4><b><font color="red">{movie_title}</font></b></h4>
     <p style="font-size:13px"><b>Release Date: </b>{release_date}</p>
     <p style="font-size:13px">{movie_story_line}</p>
