@@ -19,7 +19,8 @@ class Movie:
         show_trailer(self): Shows trailers on web browser.
     """
 
-    def __init__(self, title, story_line, you_tube_trailer_url, poster_image_url, release_date):
+    def __init__(self, title, story_line, you_tube_trailer_url,
+                 poster_image_url, release_date):
         self.title = title
         self.story_line = story_line
         self.you_tube_trailer_url = you_tube_trailer_url
@@ -33,7 +34,8 @@ class Movie:
 
 class TvShow(Movie):
     """
-    This class provides a way to store Tv series related information. It inherits Movie class.
+    This class provides a way to store Tv series related information.
+    It inherits Movie class.
 
     Attributes:
         title: A string to store the title of the movie.
@@ -44,6 +46,8 @@ class TvShow(Movie):
         season: An integer to store the season of Tv series.
     """
 
-    def __init__(self, title, story_line, you_tube_trailer_url, poster_image_url, release_date, season):
-        Movie.__init__(self, title, story_line, you_tube_trailer_url, poster_image_url, release_date)
+    def __init__(self, title, story_line, you_tube_trailer_url,
+                 poster_image_url, release_date, season):
+        Movie.__init__(self, title, story_line, you_tube_trailer_url,
+                       poster_image_url, release_date)
         self.season = season

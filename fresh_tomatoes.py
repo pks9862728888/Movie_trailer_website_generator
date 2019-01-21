@@ -172,6 +172,7 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
+    """ Creates moves tiles in web-page. """
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
@@ -195,6 +196,7 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movies):
+    """ Opens movies page and/appends new movies into this page."""
     # Create or overwrite the output file
     output_file = open('webpage.html', 'w')
 
